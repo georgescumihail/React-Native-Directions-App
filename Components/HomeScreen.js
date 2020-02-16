@@ -25,7 +25,7 @@ const HomeScreen = ({ navigation }) => {
                 value={long}
             />
             <Button
-                onPress={() => { navigation.navigate("Map") }}
+                onPress={() => { navigation.navigate("Map", { lat: lat, long: long }) }}
                 title="Show directions"
             />
         </View>
